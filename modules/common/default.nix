@@ -8,7 +8,7 @@
 
   imports = [
     ./applications
-    ./mail
+    # ./mail
     ./neovim
     ./programming
     ./repositories
