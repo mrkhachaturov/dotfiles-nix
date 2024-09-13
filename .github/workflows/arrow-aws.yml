@@ -150,8 +150,8 @@ jobs:
       - name: Copy Identity File to Host
         if: inputs.action == 'create'
         run: |
-          ssh -i deploy_ed25519 -o StrictHostKeyChecking=accept-new noah@${{ steps.host.outputs.stdout }} 'mkdir -pv .ssh'
-          scp -i deploy_ed25519 arrow_ed25519 noah@${{ steps.host.outputs.stdout }}:~/.ssh/id_ed25519
+          ssh -i deploy_ed25519 -o StrictHostKeyChecking=accept-new mrkhachaturov@${{ steps.host.outputs.stdout }} 'mkdir -pv .ssh'
+          scp -i deploy_ed25519 arrow_ed25519 mrkhachaturov@${{ steps.host.outputs.stdout }}:~/.ssh/id_ed25519
 
       - name: Wipe Records
         if: ${{ inputs.action == 'destroy' }}

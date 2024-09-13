@@ -95,7 +95,7 @@ inputs.nixpkgs.lib.nixosSystem rec {
       # Nextcloud backup config
       backup.s3 = {
         endpoint = "s3.us-west-002.backblazeb2.com";
-        bucket = "noahmasur-backup";
+        bucket = "mrkhachaturovmasur-backup";
         accessKeyId = "0026b0e73b2e2c80000000005";
       };
 

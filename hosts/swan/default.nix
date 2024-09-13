@@ -122,7 +122,7 @@ inputs.nixpkgs.lib.nixosSystem rec {
       # Send regular backups and litestream for DBs to an S3-like bucket
       backup.s3 = {
         endpoint = "s3.us-west-002.backblazeb2.com";
-        bucket = "noahmasur-backup";
+        bucket = "mrkhachaturovmasur-backup";
         accessKeyId = "0026b0e73b2e2c80000000005";
       };
 

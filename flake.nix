@@ -218,17 +218,17 @@
       # Global configuration for my systems
       globals =
         let
-          baseName = "masu.rs";
+          baseName = "homelab.am";
         in
         rec {
-          user = "noah";
-          fullName = "Noah Masur";
+          user = "mrkhachaturov";
+          fullName = "Ruben Khachaturov";
           gitName = fullName;
-          gitEmail = "7386960+nmasur@users.noreply.github.com";
-          mail.server = "noahmasur.com";
-          mail.imapHost = "imap.purelymail.com";
-          mail.smtpHost = "smtp.purelymail.com";
-          dotfilesRepo = "https://github.com/nmasur/dotfiles";
+          gitEmail = "105451445+mrkhachaturov@users.noreply.github.com";
+          # mail.server = "mrkhachaturovmasur.com";
+          # mail.imapHost = "imap.purelymail.com";
+          # mail.smtpHost = "smtp.purelymail.com";
+          dotfilesRepo = "https://github.com/mrkhachaturov/dotfiles-nix";
           hostnames = {
             files = "files.${baseName}";
             git = "git.${baseName}";
@@ -287,16 +287,16 @@
       };
 
       # Contains my full Mac system builds, including home-manager
-      # darwin-rebuild switch --flake .#lookingglass
+      # darwin-rebuild switch --flake .#rkmbp
       darwinConfigurations = {
-        lookingglass = import ./hosts/lookingglass { inherit inputs globals overlays; };
+        rkmbp = import ./hosts/rkmbp { inherit inputs globals overlays; };
       };
 
       # For quickly applying home-manager settings with:
       # home-manager switch --flake .#tempest
       homeConfigurations = {
         tempest = nixosConfigurations.tempest.config.home-manager.users.${globals.user}.home;
-        lookingglass = darwinConfigurations.lookingglass.config.home-manager.users."Noah.Masur".home;
+        rkmbp = darwinConfigurations.rkmbp.config.home-manager.users."rkmbp".home;
       };
 
       # Disk formatting, only used once

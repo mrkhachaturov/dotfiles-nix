@@ -17,17 +17,17 @@ inputs.darwin.lib.darwinSystem {
     (
       globals
       // rec {
-        user = "Noah.Masur";
-        gitName = "Noah-Masur_1701";
-        gitEmail = "${user}@take2games.com";
+        user = "mrkhachaturov";
+        gitName = "mrkhachaturov";
+        gitEmail = "rubo.ipihone@gmail.com";
       }
     )
     inputs.home-manager.darwinModules.home-manager
     inputs.mac-app-util.darwinModules.default
     {
       nixpkgs.overlays = [ inputs.firefox-darwin.overlay ] ++ overlays;
-      networking.hostName = "lookingglass";
-      identityFile = "/Users/Noah.Masur/.ssh/id_ed25519";
+      networking.hostName = "rkmbp";
+      identityFile = "/Users/mrkhachaturov/.ssh/id_ed25519";
       gui.enable = true;
       theme = {
         colors = (import ../../colorscheme/gruvbox-dark).dark;

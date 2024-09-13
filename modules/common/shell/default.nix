@@ -13,6 +13,6 @@
     ./nixpkgs.nix
     ./starship.nix
     ./utilities.nix
-    ./work.nix
+    # ./work.nix
   ];
 }

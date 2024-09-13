@@ -112,7 +112,7 @@
       # shell.args = [
       #   "--login"
       #   "--init-command"
-      #   "tmux attach-session -t noah || tmux new-session -s noah"
+      #   "tmux attach-session -t mrkhachaturov || tmux new-session -s mrkhachaturov"
       # ];
       key_bindings = [
         {
@@ -130,8 +130,8 @@
 
     programs.fish.shellAbbrs = {
       ta = "tmux attach-session";
-      tan = "tmux attach-session -t noah";
-      tnn = "tmux new-session -s noah";
+      tan = "tmux attach-session -t mrkhachaturov";
+      tnn = "tmux new-session -s mrkhachaturov";
     };
   };
 }
