@@ -109,9 +109,9 @@ inputs.nixpkgs.lib.nixosSystem rec {
       discord.enable = true;
       nautilus.enable = true;
       obsidian.enable = true;
-      mail.enable = true;
-      mail.aerc.enable = true;
-      mail.himalaya.enable = true;
+      mail.enable = false;
+      mail.aerc.enable = false;
+      mail.himalaya.enable = false;
       keybase.enable = true;
       mullvad.enable = false;
       rust.enable = true;

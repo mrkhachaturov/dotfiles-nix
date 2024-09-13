@@ -37,8 +37,8 @@ inputs.darwin.lib.darwinSystem {
       atuin.enable = true;
       charm.enable = true;
       neovim.enable = true;
-      mail.enable = true;
-      mail.aerc.enable = true;
+      mail.enable = false;
+      mail.aerc.enable = false;
       mail.himalaya.enable = false;
       kitty.enable = true;
       discord.enable = true;
