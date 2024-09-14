@@ -7,7 +7,7 @@
     ./direnv.nix
     ./fish
     ./fzf.nix
-    ./git.nix
+    # ./git.nix
     ./github.nix
     # ./jujutsu.nix
     ./nixpkgs.nix
