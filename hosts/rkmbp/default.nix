@@ -33,7 +33,7 @@ inputs.darwin.lib.darwinSystem {
         colors = (import ../../colorscheme/gruvbox-dark).dark;
         dark = true;
       };
-      mail.user = globals.user;
+      # mail.user = globals.user;
       atuin.enable = true;
       charm.enable = true;
       neovim.enable = true;
