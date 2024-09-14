@@ -223,11 +223,11 @@
         rec {
           user = "mrkhachaturov";
           fullName = "Ruben Khachaturov";
-          gitName = fullName;
-          gitEmail = "105451445+mrkhachaturov@users.noreply.github.com";
-          mail.server = "mrkhachaturovmasur.com";
-          mail.imapHost = "imap.purelymail.com";
-          mail.smtpHost = "smtp.purelymail.com";
+          # gitName = fullName;
+          # gitEmail = "105451445+mrkhachaturov@users.noreply.github.com";
+          # mail.server = "mrkhachaturovmasur.com";
+          # mail.imapHost = "imap.purelymail.com";
+          # mail.smtpHost = "smtp.purelymail.com";
           dotfilesRepo = "https://github.com/mrkhachaturov/dotfiles-nix";
           hostnames = {
             files = "files.${baseName}";
