@@ -12,7 +12,7 @@
     ./neovim
     ./programming
     ./repositories
-    ./shell
+    # ./shell
   ];
 
   options = {
