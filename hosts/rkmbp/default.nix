@@ -14,14 +14,14 @@ inputs.darwin.lib.darwinSystem {
   modules = [
     ../../modules/common
     ../../modules/darwin
-    (
-      globals
-      // rec {
-        user = "mrkhachaturov";
-        gitName = "mrkhachaturov";
-        gitEmail = "rubo.ipihone@gmail.com";
-      }
-    )
+    # (
+    #   globals
+    #   // rec {
+    #     user = "mrkhachaturov";
+    #     gitName = "mrkhachaturov";
+    #     gitEmail = "rubo.ipihone@gmail.com";
+    #   }
+    # )
     inputs.home-manager.darwinModules.home-manager
     inputs.mac-app-util.darwinModules.default
     {
